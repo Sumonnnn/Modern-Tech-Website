@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNest | Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">TECHNEST</h1>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="services.html" class="hover:underline">Services</a></li>
+                <li><a href="portfolio.html" class="hover:underline">Portfolio</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center text-white" style="background-image: url('assets/Images/Hero\ Banner.jpg');">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Innovative IT Solutions</h2>
+            <p class="text-lg mb-6">We provide cutting-edge technology solutions for businesses.</p>
+            <a href="services.html" class="bg-blue-500 px-6 py-3 rounded-lg text-white hover:bg-blue-700 transition">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="service-container">
+            
+            <div class="service-card">
+                <img src="assets/Images/Our Services/SDE.png" alt="Web Development">
+                <div class="service-content">
+                    <h3>Web Development</h3>
+                    <p>Custom web applications tailored to your business needs.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="assets/Images/Our Services/Cloud.jpg" alt="Cloud Solutions">
+                <div class="service-content">
+                    <h3>Cloud Solutions</h3>
+                    <p>Secure and scalable cloud solutions for enterprises.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="assets/Images/Our Services/Cyber-Security-Services.jpg" alt="Cyber Security">
+                <div class="service-content">
+                    <h3>Cyber Security</h3>
+                    <p>Comprehensive security solutions to protect your data.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="assets/Images/Our Services/AIML.png" alt="Artificial Intellegence and Machine Learning">
+                <div class="service-content">
+                    <h3>AI/ML Solutions</h3>
+                    <p>Leverage artificial intelligence and machine learning for smarter decisions.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="assets/Images/Our Services/UIUX.png" alt="UI/UX Designing">
+                <div class="service-content">
+                    <h3>UI/UX Design</h3>
+                    <p>Creating engaging and user-friendly digital experiences.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="assets/Images/Our Services/IT Consulting.jpg" alt="IT Consulting">
+                <div class="service-content">
+                    <h3>IT Consulting</h3>
+                    <p>Expert guidance to optimize your IT infrastructure and operations.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Chatbot Button -->
+    <button id="chatbot-toggle" class="fixed bottom-6 right-6 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition">💬</button>
+
+    <!-- Chatbot Window -->
+    <!-- Chatbot Window -->
+<div id="chatbot-container" class="hidden fixed bottom-16 right-6 w-80 bg-white shadow-lg rounded-lg p-4">
+    <div class="flex justify-between items-center mb-2">
+        <h4 class="text-lg font-semibold">Chat with Us</h4>
+        <button id="chatbot-close" class="text-gray-500 hover:text-gray-700 text-xl font-bold">&times;</button>
+    </div>
+    <div id="chatbot-messages" class="h-40 overflow-y-auto p-2 bg-gray-100 rounded-md"></div>
+    <input type="text" id="chatbot-input" class="w-full p-2 mt-2 border rounded-md" placeholder="Type a message...">
+</div>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/chatbot.js"></script>
+
+</body>
+</html>

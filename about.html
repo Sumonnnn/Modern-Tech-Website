@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white fixed w-full top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">TECHNEST</h1>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="services.html" class="hover:underline">Services</a></li>
+                <li><a href="portfolio.html" class="hover:underline">Portfolio</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background -->
+    <section class="relative w-full h-screen flex items-center justify-center text-center text-white">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/Images/abt_us_.jpg');">
+            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+        </div>
+        <div class="relative z-10 px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fadeIn">Who We Are</h1>
+            <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
+                We are a technology-driven company providing cutting-edge solutions in web development, cloud computing, and cybersecurity.
+                Our team consists of experts committed to delivering top-notch IT services.
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-semibold mb-6 animate-fadeIn">Meet Our Team</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-800 rounded-lg shadow-lg transform transition hover:scale-105 animate-float">
+                    <h4 class="text-xl font-semibold">Sumon Das</h4>
+                    <p class="text-gray-400">CEO & Founder</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-lg transform transition hover:scale-105 animate-float">
+                    <h4 class="text-xl font-semibold">Ranjana Shetty</h4>
+                    <p class="text-gray-400">Lead Developer</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-lg transform transition hover:scale-105 animate-float">
+                    <h4 class="text-xl font-semibold">Itachi Uchiha</h4>
+                    <p class="text-gray-400">Cybersecurity Expert</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
